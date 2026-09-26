@@ -1,0 +1,25 @@
+# PHPStan 2.2.16 - configuracao "padrao" (equivalente ao padrao de fabrica)
+#
+# Sem arquivo de configuracao e sem --level, o PHPStan usa o nivel 0
+# (CommandHelper::DEFAULT_LEVEL = '0'; https://phpstan.org/user-guide/rule-levels:
+# "The default level is 0"). Com um arquivo de configuracao, porem, o nivel
+# passa a ser obrigatorio ("Once you specify a configuration file, you also have
+# to specify the level to run"): sem `level`, a execucao aborta com
+# "No rules detected". Por isso o nivel 0 e declarado explicitamente aqui.
+#
+# Execucao (na raiz do projeto Laravel):
+#   vendor/bin/phpstan analyse -c phpstan-padrao.neon
+# Equivalente sem arquivo:
+#   vendor/bin/phpstan analyse app        (usa o nivel 0)
+
+parameters:
+	level: 0
+	paths:
+		- app
+	# vendor/ nao e analisado (so app/ esta em paths); o PHPStan ainda usa o
+	# autoloader do Composer para descobrir os simbolos de vendor/.
+	#
+	# phpVersion nao e fixado: o PHPStan infere a faixa a partir de
+	# require.php do composer.json (Laravel 5.5: >=7.0.0). O menor valor aceito
+	# em phpVersion e 70100 (conf/parametersSchema.neon), entao PHP 7.0 nao pode
+	# ser declarado explicitamente.

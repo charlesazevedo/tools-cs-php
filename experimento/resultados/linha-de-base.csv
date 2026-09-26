@@ -1,0 +1,11 @@
+ferramenta,configuracao,avisos,saida_ok
+PHPMD,padrao,158,True
+PHPMD,completa,158,True
+PHPCS,padrao,1867,True
+PHPCS,completa,7836,True
+PHPStan,padrao,3,True
+PHPStan,completa,886,True
+Psalm,padrao,621,True
+Psalm,completa,1150,True
+SonarQube,padrao,315,True
+SonarQube,completa,1906,True

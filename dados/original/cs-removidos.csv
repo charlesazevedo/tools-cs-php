@@ -1,0 +1,18 @@
+id_antigo,nome,motivo,exemplo_antigo
+3,Clone Implementations,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",CloneImplementations.php
+5,Confusing Incrementers,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",ConfusingIncrementers.php
+6,Confusing Loops,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",ConfusingLoops.php
+8,Empty Blocks,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",EmptyBlocks.php
+14,Names Poorly Defined,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",NamesPoorlyDefined.php
+15,Overloaded Classes,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",OverloadedClasses.php
+18,Unnecessary Code,"Soltanifar et al. 2016, projeto Java (PMD); removido do catálogo da RSL",UnnecessaryCode.php
+28,Excessive Subclassing,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",ExcessiveSubClassing.php
+31,Incorrect String Manipulation,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",IncorrectStringManipulation.php
+32,Confusing Use Of Comments,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",ConfusingUseOfComments.php
+33,Inefficient Logic,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",InefficientLogic.php
+34,Code Fragmentation,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",CodeFragmentation.php
+35,Unclear Loop Logic,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",UnclearLoopLogic.php
+36,Excessive Inline Code,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",ExcessiveInlineCode.php
+37,Incorrect Variable Naming,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",IncorrectVariableNaming.php
+38,Poorly Organized Classes,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",PoorlyOrganizedClasses.php
+39,Misaligned Logic Blocks,"item 57–71 da lista original da RSL, sem registro na planilha de extração; removido da RSL",MisalignedLogicBlocks.php

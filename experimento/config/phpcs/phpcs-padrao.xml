@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+  PHP_CodeSniffer 4.0.4 - configuração "padrão".
+  Sem a opção standard na linha de comando e sem arquivo .phpcs.xml/phpcs.xml/.phpcs.xml.dist/phpcs.xml.dist
+  no diretório (ou acima), o PHPCS 4.x usa o padrão PSR12
+  (Config::restoreDefaults(): $this->standards = ['PSR12']).
+  CHANGELOG-4.x.md (4.0.0): "The default coding standard has changed from PEAR to PSR12".
+  No PHPCS 3.x (até 3.13.x) o padrão implícito era PEAR; para reproduzir o
+  experimento original com 3.x, troque PSR12 por PEAR abaixo.
+-->
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="phpcs-padrao"
+         xsi:noNamespaceSchemaLocation="https://schema.phpcodesniffer.com/phpcs.xsd">
+    <description>Padrão implícito do PHPCS 4.0.4 (PSR12, 60 sniffs).</description>
+    <rule ref="PSR12"/>
+</ruleset>

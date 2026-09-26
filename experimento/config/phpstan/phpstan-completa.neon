@@ -1,0 +1,24 @@
+# PHPStan 2.2.16 - configuracao "completa" (maximo de verificacoes do nucleo)
+#
+# `level: max` e um alias do nivel mais alto (hoje 10; conf/config.levelmax.neon
+# inclui config.level10.neon). Os niveis sao cumulativos (0..10).
+#
+# Ficam de fora, de proposito (nao sao "nucleo" padrao nem nivel de regra):
+#  - bleedingEdge (includes: phar://phpstan.phar/conf/bleedingEdge.neon):
+#    previa da proxima versao principal. Entre outras coisas liga
+#    `featureToggles.unusedLabel` (regra label.unused, nivel 4, rotulo de goto
+#    nunca usado). Nao acrescenta regra para nenhum dos 38 CS alem disso.
+#  - phpstan/phpstan-strict-rules 2.0.12: extensao oficial com regras de
+#    tipagem estrita (booleanos em condicoes, comparacao frouxa, empty(),
+#    variaveis variaveis, backtick...). Nenhuma corresponde aos 38 CS.
+#  - parametros extras de "stricter analysis" (checkUninitializedProperties,
+#    checkBenevolentUnionTypes...): nao correspondem aos 38 CS.
+#  - Larastan (extensao de terceiros para Laravel).
+#
+# Execucao (na raiz do projeto Laravel):
+#   vendor/bin/phpstan analyse -c phpstan-completa.neon
+
+parameters:
+	level: max
+	paths:
+		- app

@@ -1,0 +1,29 @@
+Pacote de replicação: Quais Code Smells as Ferramentas de Análise Estática
+para PHP Detectam? Um Estudo Experimental
+
+Copyright (c) 2026 Charles de Azevedo Júnior e Wilkerson de Lucena Andrade
+
+Os dados e os resultados deste pacote (dados/, experimento/resultados/ e o
+arquivo saidas-brutas.zip, anexado à release) estão licenciados sob a licença
+Creative Commons Atribuição 4.0 Internacional (CC BY 4.0). Você pode copiar,
+redistribuir, adaptar e usar os dados para qualquer fim, inclusive comercial,
+desde que atribua o crédito aos autores, indique a fonte e informe se fez
+alterações.
+
+Texto completo da licença: https://creativecommons.org/licenses/by/4.0/legalcode.pt
+Resumo: https://creativecommons.org/licenses/by/4.0/deed.pt-br
+
+O código (variantes, scripts, configurações e ambiente Docker) é coberto pela
+licença MIT (arquivo LICENSE).
+
+O projeto analisado, o PDVLaravel (https://github.com/Lucasczm/PDVLaravel), não
+faz parte deste pacote: os scripts o baixam no commit fixado. Ele não declara
+licença, e nada dele é redistribuído aqui.
+
+-------------------------------------------------------------------------------
+
+The data and results of this package (dados/, experimento/resultados/ and the
+saidas-brutas.zip release asset) are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+The code is licensed under the MIT License (file LICENSE).

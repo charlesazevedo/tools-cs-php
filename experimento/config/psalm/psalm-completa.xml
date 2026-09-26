@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+  Psalm 6.18.0 - configuracao "completa" (maximo de verificacoes do nucleo,
+  sem plugins).
+
+  errorLevel="1": todas as questoes com nivel > 0 viram erro
+  (Config::getReportingLevelForFile: nivel da questao < nivel configurado => info).
+
+  Opcoes de codigo nao usado, todas ligadas:
+    findUnusedCode, findUnusedVariablesAndParams, findUnusedPsalmSuppress,
+    findUnusedBaselineEntry, findUnusedIssueHandlerSuppression.
+
+  limitMethodComplexity="true" (opt-in, config.xsd default="false"): liga
+  ComplexMethod/ComplexFunction (StatementsAnalyzer::checkUnreferencedVars),
+  com os limites padrao maxGraphSize=200 e maxAvgPathLength=70 (Config.php).
+  Incluido porque e a unica opcao opt-in do nucleo que corresponde a CS do
+  catalogo (C18/C19, de forma aproximada). Remova-o para uma "completa" que
+  mexa so no nivel e nas opcoes de codigo nao usado.
+
+  Nao incluidos (opt-in do nucleo sem relacao com os 38 CS):
+  checkForThrowsDocblock, checkForThrowsInGlobalScope,
+  ensureArrayIntOffsetsExist, ensureArrayStringOffsetsExist,
+  disallowLiteralKeysOnUnshapedArrays, restrictReturnTypes, runTaintAnalysis.
+  Tambem nao se acrescenta lista <forbiddenFunctions> (ex.: print_r): seria uma
+  regra escrita pelo usuario, nao uma verificacao da ferramenta.
+
+  Execucao (na raiz do projeto Laravel):
+    vendor/bin/psalm -c psalm-completa.xml
+  (acrescente a opcao no-cache, com dois hifens, para ignorar o cache)
+-->
+<psalm
+    errorLevel="1"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedCode="true"
+    findUnusedVariablesAndParams="true"
+    findUnusedPsalmSuppress="true"
+    findUnusedBaselineEntry="true"
+    findUnusedIssueHandlerSuppression="true"
+    limitMethodComplexity="true"
+>
+    <projectFiles>
+        <directory name="app" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>

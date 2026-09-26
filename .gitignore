@@ -1,0 +1,5 @@
+# Área de trabalho (projeto baixado, cópias por execução, saídas brutas) e o
+# token local do SonarQube: nunca publicar.
+experimento/trabalho/
+experimento/.env
+__pycache__/

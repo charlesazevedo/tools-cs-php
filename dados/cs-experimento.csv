@@ -1,0 +1,39 @@
+id,nome,categoria,especificidade,descricao,estudos_rsl,cs_antigos,exemplos_antigos
+C01,Development Code Fragment,PHP e aplicações web,P,"Fragmentos usados só durante o desenvolvimento, como var_dump() e print_r(), esquecidos no código.",rio_abreu_2023; rio_causal_2024,,
+C02,Goto Statement,PHP e aplicações web,G,"Uso da instrução goto, que torna o fluxo do programa difícil de acompanhar.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021,,
+C03,Implicitly Granted Privileges,PHP e aplicações web,W,"Privilégio concedido implicitamente com outro: rotinas protegidas por um privilégio executam operações que exigiriam outro, sem verificá-lo.",gauthier_merlo_2013,,
+C04,Semantically Related Privileges,PHP e aplicações web,W,"Privilégios com a mesma semântica duplicados para cada componente do sistema, o que acopla privilégios a componentes.",gauthier_merlo_2013,,
+C05,Embedded/Inline JavaScript,PHP e aplicações web,W,"JavaScript no HTML gerado, em tags <script> ou em atributos dos elementos, misturando lógica e apresentação.",nguyen_2012; rio_causal_2024,,
+C06,Embedded/Inline CSS,PHP e aplicações web,W,"CSS no HTML gerado, em tags <style> ou no atributo style, em vez de folhas de estilo separadas.",nguyen_2012; rio_causal_2024,,
+C07,CSS in JavaScript,PHP e aplicações web,W,"Propriedades de estilo definidas no código JavaScript, inclusive por meio do jQuery.",nguyen_2012; rio_causal_2024,,
+C08,Fontes dispersas,PHP e aplicações web,W,Trechos relacionados do código do cliente espalhados por diferentes funções do código do servidor.,nguyen_2012,,
+C09,JavaScript duplicado,PHP e aplicações web,W,"Trechos de JavaScript repetidos, embutidos no código do servidor.",nguyen_2012,,
+C10,HTML com erro de sintaxe,PHP e aplicações web,W,"HTML gerado fora da especificação da linguagem, como tags sem fechamento.",nguyen_2012,,
+C11,Excessive Class Length,Tamanho,G,"Classe com código em excesso (ex.: mais de 1.000 linhas), o que indica responsabilidades demais.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,2 Class Length,ClassLengthSmell.php
+C12,Excessive Method Length,Tamanho,G,"Método longo demais (ex.: mais de 100 linhas), difícil de entender e manter.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,10 Excessive Method Length (EML),ExcessiveMethodLength.php
+C13,Excessive Parameter List,Tamanho,G,"Método com parâmetros demais (ex.: mais de 10), sinal de que acumula tarefas.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,11 Excessive Parameter List (EPL); 26 Parameter List,ExcessiveParameterList.php; ParameterList.php
+C14,Too Many Methods,Tamanho,G,"Classe com métodos demais (ex.: mais de 25), o que indica baixa coesão.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,16 Too Many Methods,TooManyMethods.php
+C15,Too Many Public Methods,Tamanho,G,"Classe com métodos públicos demais (ex.: mais de 10), expondo funcionalidades em excesso.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,17 Too Many Public Methods (TMPM),TooManyPublicMethods.php
+C16,Too Many Fields,Tamanho,G,Classe com campos demais (ex.: mais de 15).,rio_abreu_2023; rio_causal_2024,27 Too Many Fields,TooManyFields.php
+C17,Excessive Public Count,Tamanho,G,"Classe com métodos e atributos públicos demais, somados (ex.: mais de 45).",rio_abreu_2023; rio_causal_2024,,
+C18,Cyclomatic Complexity,Complexidade,G,Pontos de decisão demais em um método (ex.: complexidade acima de 10).,bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rubert_farias_2022; rio_abreu_2023; rio_causal_2024,4 Code Complexity; 23 High Method Complexity (HMC),CodeComplexity.php; HighMethodComplexity.php
+C19,NPath Complexity,Complexidade,G,Caminhos de execução acíclicos demais em um método (ex.: mais de 200).,bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,,
+C20,Excessive Class Complexity,Complexidade,G,Soma excessiva das complexidades dos métodos de uma classe (ex.: acima de 50).,rio_abreu_2023; rio_causal_2024,1 Class Complexity,ClassComplexitySmell.php
+C21,Coupling Between Objects,Herança e acoplamento,G,"Classe com dependências demais (ex.: mais de 13), o que propaga o efeito das mudanças.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,22 High Coupling (HC),HighCoupling.php
+C22,Depth of Inheritance,Herança e acoplamento,G,Hierarquia de herança profunda demais (ex.: mais de 6 níveis).,bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,,
+C23,Number of Children,Herança e acoplamento,G,Classe com subclasses demais (ex.: mais de 15).,bessghaier_diffusion_2020; bessghaier_longitudinal_2021; rio_abreu_2023; rio_causal_2024,21 Excessive Number of Children (ENOC),ExcessiveNumberOfChildrenSmell.php
+C24,Duplicate Code,Duplicação,G,Trechos de código repetidos em diferentes partes do sistema.,rubert_farias_2022,7 Duplicate Code,DuplicateCode.php
+C25,Unused Private Field,Código não utilizado,G,Campo privado nunca utilizado.,rio_abreu_2023; rio_causal_2024,29 Unused Private Field,UnusedPrivateField.php
+C26,Unused Private Method,Código não utilizado,G,Método privado nunca chamado.,rio_abreu_2023; rio_causal_2024,30 Unused Private Method,UnusedPrivateMethod.php
+C27,Unused Local Variable,Código não utilizado,G,Variável local declarada e nunca utilizada.,rio_abreu_2023; rio_causal_2024,20 Unused Local Variable,UnusedLocalVariable.php
+C28,Unused Formal Parameter,Código não utilizado,G,Parâmetro de método nunca utilizado no corpo do método.,rio_abreu_2023; rio_causal_2024,19 Unused Formal Parameter,UnusedFormalParameter.php
+C29,Empty Catch Block,Exceções,G,"Bloco catch vazio, que ignora a exceção capturada.",bessghaier_diffusion_2020; bessghaier_longitudinal_2021,9 Empty Catch Block,EmptyCatchBlock.php
+C30,Missing Function Comments,Documentação,P,Funções sem comentários de documentação.,soltanifar_2016,13 Missing Function Comments,MissingFunctionComments.php
+C31,Missing @Return Tag in Comments,Documentação,P,Comentários de função sem a descrição do retorno (@return).,soltanifar_2016,25 Missing @Return Tag in Comments,Missing@returnTagInComments.php
+C32,Poorly Grouped Parameter Tags,Documentação,P,Tags de parâmetro mal agrupadas nos comentários de documentação.,soltanifar_2016,,
+C33,Comment Style (/**),Documentação,P,Comentários que não seguem o estilo de documentação exigido (/**).,soltanifar_2016,,
+C34,Missing Parameter Name,Documentação,P,Tag @param sem o nome do parâmetro nos comentários de documentação.,soltanifar_2016,,
+C35,Brace Placement Rules,Estilo,P,"Chaves posicionadas fora do padrão de codificação, como a chave de abertura que deveria estar em uma nova linha.",soltanifar_2016,,
+C36,Incorrect Spacing After Commas,Estilo,P,Ausência de espaço após vírgulas.,soltanifar_2016,24 Incorrect Spacing After Commas,IncorrectSpacingAfterCommas.php
+C37,Functions Parentheses on Multiple Lines,Estilo,P,Uso inadequado de parênteses em chamadas de função com várias linhas.,soltanifar_2016,12 Functions Parentheses on Multiple Lines,FunctionsParenthesesOnMultipleLines.php
+C38,Blank Line Before Tags,Estilo,P,Quantidade incorreta de linhas em branco antes das tags nos comentários de documentação.,soltanifar_2016,,

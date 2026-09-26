@@ -1,0 +1,50 @@
+# Ambiente do experimento (L6). Versões fixadas em VERSOES.md.
+#   docker compose -p cs-experimento up -d --build
+# O SonarQube fica em http://localhost:9010 (porta diferente da 9000 para não
+# colidir com outras instalações). Os dados do servidor ficam em volumes
+# nomeados; 'docker compose -p cs-experimento down -v' apaga tudo.
+name: cs-experimento
+
+services:
+  ferramentas:
+    build: ./ferramentas
+    image: cs-experimento-ferramentas:1
+    container_name: cs-exp-ferramentas
+    # Mesmo usuário do host, para que os arquivos gravados em trabalho/ não
+    # fiquem com dono root.
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment:
+      - HOME=/tmp
+      - COMPOSER_HOME=/tmp/composer
+    volumes:
+      - ./trabalho:/trabalho
+      - ./config:/config:ro
+
+  sonarqube:
+    image: sonarqube:26.9.0.129388-community
+    container_name: cs-exp-sonarqube
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    ports:
+      - "127.0.0.1:9010:9000"
+    volumes:
+      - sonar_data:/opt/sonarqube/data
+      - sonar_extensions:/opt/sonarqube/extensions
+      - sonar_logs:/opt/sonarqube/logs
+
+  # Só roda sob demanda (docker compose run), a partir de executar.py.
+  scanner:
+    image: sonarsource/sonar-scanner-cli:12.2.0.4256_8.1.0
+    profiles: ["scanner"]
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    volumes:
+      - ./trabalho:/trabalho
+      - scanner_cache:/opt/sonar-scanner/.sonar/cache
+    environment:
+      - SONAR_HOST_URL=http://sonarqube:9000
+
+volumes:
+  scanner_cache:
+  sonar_data:
+  sonar_extensions:
+  sonar_logs:

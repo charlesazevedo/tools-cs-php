@@ -1,0 +1,40 @@
+id,code_smell,sonarqube,phpmd,phpcs,phpstan,psalm
+1,Class Complexity,Sim,Não,Não,Não,Não
+2,Class Length,Não,Não,Não,Não,Não
+3,Clone Implementations,Não,Não,Não,Não,Não
+4,Code Complexity,Não,Sim,Não,Não,Não
+5,Confusing Incrementers,Sim,Não,Não,Não,Não
+6,Confusing Loops,Não,Sim,Não,Não,Não
+7,Duplicate Code,Não,Sim,Não,Não,Sim
+8,Empty Blocks,Sim,Não,Não,Não,Não
+9,Empty Catch Block,Sim,Sim,Não,Não,Não
+10,Excessive Method Length (EML),Sim,Sim,Não,Não,Não
+11,Excessive Parameter List (EPL),Não,Não,Não,Não,Não
+12,Functions Parentheses on Multiple Lines,Não,Não,Sim,Não,Não
+13,Missing Function Comments,Não,Não,Não,Não,Não
+14,Names Poorly Defined,Não,Não,Não,Não,Não
+15,Overloaded Classes,Não,Não,Não,Não,Não
+16,Too Many Methods,Sim,Não,Não,Não,Não
+17,Too Many Public Methods (TMPM),Não,Sim,Não,Não,Não
+18,Unnecessary Code,Sim,Não,Não,Sim,Não
+19,Unused Formal Parameter,Não,Sim,Não,Sim,Sim
+20,Unused Local Variable,Sim,Sim,Não,Sim,Sim
+21,Excessive Number of Children (ENOC),Não,Não,Não,Não,Não
+22,High Coupling (HC),Não,Não,Não,Não,Não
+23,High Method Complexity (HMC),Não,Não,Não,Não,Não
+24,Incorrect Spacing After Commas,Não,Não,Sim,Não,Não
+25,Missing @Return Tag in Comments,Não,Não,Não,Sim,Não
+26,Parameter List,Não,Não,Não,Não,Não
+27,Too Many Fields,Não,Sim,Não,Não,Não
+28,Excessive Subclassing,Não,Não,Não,Não,Não
+29,Unused Private Field,Sim,Sim,Não,Sim,Sim
+30,Unused Private Method,Sim,Sim,Não,Sim,Sim
+31,Incorrect String Manipulation,Não,Não,Não,Sim,Não
+32,Confusing Use Of Comments,Não,Não,Não,Não,Não
+33,Inefficient Logic,Não,Não,Não,Sim,Não
+34,Code Fragmentation,Não,Não,Não,Não,Não
+35,Unclear Loop Logic,Não,Não,Não,Não,Não
+36,Excessive Inline Code,Não,Não,Não,Não,Não
+37,Incorrect Variable Naming,Não,Sim,Não,Não,Não
+38,Poorly Organized Classes,Não,Não,Não,Não,Não
+39,Misaligned Logic Blocks,Não,Não,Não,Não,Não

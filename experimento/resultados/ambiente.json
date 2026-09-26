@@ -1,0 +1,62 @@
+{
+  "php": "PHP 8.3.33 (cli) (built: Sep 19 2026 00:32:23) (NTS)",
+  "phpmd": "PHPMD 2.15.0snapshot202312110823",
+  "phpcs": "PHP_CodeSniffer version 4.0.4 (stable) by Squiz and PHPCSStandards",
+  "phpstan": "PHPStan - PHP Static Analysis Tool 2.2.16",
+  "psalm": "Psalm 6.18.0@536dd6236b39a5115385b0307b42d6d1ad431a02",
+  "composer": "Composer version 2.10.3 2026-08-27 13:34:23",
+  "sonarqube": "26.9.0.129388",
+  "sonarqube_plugins": {
+    "web": "3.31 (build 8334)",
+    "javascript": "13.8 (build 44569)",
+    "php": "3.60.0.16641"
+  },
+  "sonarqube_perfis": [
+    {
+      "name": "Completo (todas as regras)",
+      "language": "php",
+      "isDefault": false,
+      "activeRuleCount": 245
+    },
+    {
+      "name": "Sonar way",
+      "language": "php",
+      "isDefault": true,
+      "activeRuleCount": 176
+    },
+    {
+      "name": "Completo (todas as regras)",
+      "language": "web",
+      "isDefault": false,
+      "activeRuleCount": 94
+    },
+    {
+      "name": "Sonar way",
+      "language": "web",
+      "isDefault": true,
+      "activeRuleCount": 61
+    }
+  ],
+  "imagens": {
+    "cs-experimento-ferramentas:1": "[] sha256:0b3d76ed9ee65f1a45b4f84d886801ab241f3b287283efa098ec6d42c5466d42",
+    "sonarqube:26.9.0.129388-community": "[\"sonarqube@sha256:58b068af30bdfdccf91222de36e310529033e853dfae221b429cba80d10d5751\"] sha256:fa95fd303db729eec9a14a78dfc1a9a0e1d690257340484d4197470d1f215440",
+    "sonarsource/sonar-scanner-cli:12.2.0.4256_8.1.0": "[\"sonarsource/sonar-scanner-cli@sha256:a3f4215076706c95a17a68c19322ee916e40a3acd081a8c1a1e839e0194afa57\"] sha256:040fa7248c0504dc6815541dffa7135eca00052bf72fa1b5b569d55e0b39dbd7"
+  },
+  "projeto": {
+    "repositorio": "Lucasczm/PDVLaravel",
+    "commit": "98cddb84521765c29ff7ed691d7f5ba325cc7edc",
+    "laravel": "v5.5.29",
+    "php_exigido": ">=7.0.0",
+    "caixacontroller": {
+      "linhas": 232,
+      "metodos_publicos": 12
+    },
+    "ncloc_sonarqube": 1731
+  },
+  "sonar_scanner": "SonarScanner CLI 8.1.0.6389",
+  "phpcs_sniffs": {
+    "padrao": 60,
+    "completa": 204
+  },
+  "phpmd_regras": 45
+}

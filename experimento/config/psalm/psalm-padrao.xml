@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+  Psalm 6.18.0 - configuracao "padrao".
+
+  O Psalm nao roda sem arquivo de configuracao ("Could not locate a config XML
+  file ... Have you run 'psalm [init]' ?"). Este arquivo reproduz o modelo que
+  a opcao init do Psalm (psalm, dois hifens, init) grava (src/Psalm/Config/Creator.php, constante TEMPLATE:
+  findUnusedBaselineEntry="true", findUnusedCode="true",
+  resolveFromConfigFile="true", projectFiles + ignoreFiles vendor), com uma
+  diferenca: o atributo errorLevel foi omitido.
+
+  Motivo: A opcao init sem argumento de nivel analisa o projeto e grava o
+  nivel "detectado" (Creator::getLevel), que depende do codigo. Sem errorLevel,
+  vale o padrao documentado: nivel 2 ("When no level is explicitly defined,
+  psalm defaults to level 2", docs/running_psalm/error_levels.md;
+  Config.php: $config->level = 2; config.xsd: errorLevel default="2").
+
+  findUnusedCode ja e true por padrao no Psalm 6 (config.xsd default="true";
+  Config.php public bool $find_unused_code = true) e, quando ativo, liga tambem
+  a busca de variaveis/parametros nao usados (Codebase::reportUnusedCode define
+  find_unused_variables = true). Aqui ele fica explicito, como no modelo gerado pela opcao init.
+
+  Execucao (na raiz do projeto Laravel):
+    vendor/bin/psalm -c psalm-padrao.xml
+  (acrescente a opcao no-cache, com dois hifens, para ignorar o cache; comentarios XML
+  nao admitem dois hifens seguidos)
+-->
+<psalm
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="true"
+>
+    <projectFiles>
+        <directory name="app" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>

@@ -1,0 +1,94 @@
+Web:AvoidCommentedOutCodeCheck	READY	Sections of code should not be commented out
+Web:AvoidHtmlCommentCheck	READY	HTML comments should be removed
+Web:BoldAndItalicTagsCheck	DEPRECATED	"<strong>" and "<em>" tags should be used
+Web:ComplexityCheck	DEPRECATED	Files should not be too complex
+Web:DoctypePresenceCheck	READY	"<!DOCTYPE>" declarations should appear before "<html>" tags
+Web:DoubleQuotesCheck	READY	Attributes should be quoted using double quotes rather than single ones
+Web:DynamicJspIncludeCheck	READY	Dynamic includes should not be used
+Web:FieldsetWithoutLegendCheck	DEPRECATED	"<fieldset>" tags should contain a "<legend>"
+Web:FileLengthCheck	READY	Files should not have too many lines
+Web:FlashUsesBothObjectAndEmbedCheck	READY	Flash animations should be embedded using both "<object>" and "<embed>"
+Web:FrameWithoutTitleCheck	READY	"<frames>" should have a "title" attribute
+Web:HeaderCheck	READY	Track lack of copyright and license headers
+Web:IllegalElementCheck	READY	Track uses of disallowed elements
+Web:IllegalNamespaceCheck	READY	Track uses of disallowed namespaces in XHTML documents
+Web:IllegalTabCheck	READY	Tabulation characters should not be used
+Web:IllegalTagLibsCheck	READY	Disallowed "taglibs" should not be used
+Web:ImgWithoutAltCheck	READY	Image, area and button with image elements should have an "alt" attribute
+Web:ImgWithoutWidthOrHeightCheck	READY	Image tags should have "width" and "height" attributes
+Web:InlineStyleCheck	READY	The "style" attribute should not be used
+Web:InputWithoutLabelCheck	READY	"input", "select" and "textarea" tags should be labeled
+Web:InternationalizationCheck	READY	Labels should be defined in the resource bundle
+Web:ItemTagNotWithinContainerTagCheck	READY	"<li>" and "<dt>" item tags should be in "<ul>", "<ol>" or "<dl>" container tags
+Web:JspScriptletCheck	READY	JSP expressions should not be used
+Web:LinksIdenticalTextsDifferentTargetsCheck	READY	Links with identical texts should have identical targets
+Web:LinkToImageCheck	DEPRECATED	Links should not directly target images
+Web:LinkToNothingCheck	READY	Links should not target "#" or "javascript:void(0)"
+Web:LongJavaScriptCheck	READY	JavaScript scriptlets should not have too many lines of code
+Web:MaxLineLengthCheck	READY	Lines should not be too long
+Web:MetaRefreshCheck	READY	Meta tags should not be used to refresh or redirect
+Web:MouseEventWithoutKeyboardEquivalentCheck	READY	Mouse events should have corresponding keyboard events
+Web:MultiplePageDirectivesCheck	READY	Multiple "page" directives should not be used
+Web:NonConsecutiveHeadingCheck	DEPRECATED	Heading tags should be used consecutively from "H1" to "H6"
+Web:PageWithoutFaviconCheck	READY	Favicons should be used in all pages
+Web:PageWithoutTitleCheck	READY	"<title>" should be present in all pages
+Web:RequiredAttributeCheck	READY	Track lack of required attributes
+Web:S1134	READY	Track uses of "FIXME" tags
+Web:S1135	READY	Track uses of "TODO" tags
+Web:S1436	READY	Track lack of required an element with the required "id"
+Web:S1827	READY	Attributes deprecated in HTML5 should not be used
+Web:S1829	READY	Web pages should not contain absolute URIs
+Web:S4084	READY	Videos should have subtitles
+Web:S4645	READY	<script>...</script> elements should not be nested
+Web:S5148	READY	Opened windows should not have access to the originating page
+Web:S5247	READY	Auto-escaping in HTML template engines should not be disabled
+Web:S5254	READY	"<html>" or "<body>" element should have a language attribute
+Web:S5255	READY	"aria-label" or "aria-labelledby" attributes should be used to differentiate similar elements
+Web:S5256	READY	Tables should have headers
+Web:S5257	READY	HTML "<table>" should not be used for layout purposes
+Web:S5258	READY	Tables used for layout should not include semantic markup
+Web:S5260	READY	Table cells should reference their headers
+Web:S5264	READY	"<object>" tags should provide an alternative content
+Web:S5725	READY	Remote artifacts should not be used without integrity checks
+Web:S6793	READY	ARIA properties in DOM elements should have valid values
+Web:S6807	READY	DOM elements with ARIA roles should have the required properties
+Web:S6811	READY	DOM elements with ARIA role should only have supported properties
+Web:S6819	READY	Prefer tag over ARIA role
+Web:S6821	READY	DOM elements with ARIA roles should have a valid non-abstract role
+Web:S6822	READY	No redundant ARIA role
+Web:S6823	READY	DOM elements with the `aria-activedescendant` property should be accessible via the tab key
+Web:S6824	READY	No ARIA role or property for unsupported DOM elements
+Web:S6825	READY	Focusable elements should not have "aria-hidden" attribute
+Web:S6827	READY	Anchors should contain accessible content
+Web:S6840	READY	DOM elements should use the "autocomplete" attribute correctly
+Web:S6841	READY	"tabIndex" values should be 0 or -1
+Web:S6842	READY	Non-interactive DOM elements should not have interactive ARIA roles
+Web:S6843	READY	Interactive DOM elements should not have non-interactive ARIA roles
+Web:S6844	READY	Anchor tags should not be used as buttons
+Web:S6845	READY	Non-interactive DOM elements should not have the `tabindex` attribute
+Web:S6846	READY	DOM elements should not use the "accesskey" property
+Web:S6847	READY	Non-interactive elements shouldn't have event handlers
+Web:S6848	READY	Non-interactive DOM elements should not have an interactive handler
+Web:S6850	READY	Heading elements should have accessible content
+Web:S6851	READY	Images should have a non-redundant alternate description
+Web:S6852	READY	Elements with an interactive role should support focus
+Web:S6853	READY	Label elements should have a text label and an associated control
+Web:S7039	READY	Content Security Policies should be restrictive
+Web:S7071	READY	Sandboxing should be enabled
+Web:S7074	READY	webSecurity should be enabled
+Web:S7926	READY	Meta viewport tags should allow users to zoom
+Web:S7927	READY	Visible label text should be part of the accessible name
+Web:S7929	READY	Audio and video elements should not play automatically
+Web:S7930	READY	HTML elements should have unique "id" attribute values
+Web:S8697	READY	"srcset" entries should have a width or pixel density descriptor
+Web:S8699	READY	"<form>" tags should have an explicit valid "method" attribute
+Web:S8720	READY	The "role" attribute should be used instead of "aria-role"
+Web:S8732	READY	"<legend>" tags should be direct children of "<fieldset>" or "<optgroup>" elements
+Web:ServerSideImageMapsCheck	DEPRECATED	Server-side image maps ("ismap" attribute) should not be used
+Web:TableHeaderHasIdOrScopeCheck	READY	"<th>" tags should have "id" or "scope" attributes
+Web:TableWithoutCaptionCheck	DEPRECATED	"<table>" tags should have a description
+Web:UnclosedTagCheck	READY	All HTML tags should be closed
+Web:UnifiedExpressionCheck	READY	JSF expressions should be syntactically valid
+Web:UnsupportedTagsInHtml5Check	READY	Elements deprecated in HTML5 should not be used
+Web:WhiteSpaceAroundCheck	READY	White space should be used in JSP/JSF tags
+Web:WmodeIsWindowCheck	DEPRECATED	Flash animations should be embedded using the window mode

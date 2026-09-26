@@ -1,0 +1,245 @@
+php:NoSonar	READY	Track uses of "NOSONAR" comments
+php:S100	READY	Function names should comply with a naming convention
+php:S101	READY	Class names should comply with a naming convention
+php:S103	READY	Lines should not be too long
+php:S1045	READY	All "catch" blocks should be able to catch exceptions
+php:S104	READY	Files should not have too many lines of code
+php:S105	READY	Tabulation characters should not be used
+php:S1066	READY	Mergeable "if" statements should be combined
+php:S1067	READY	Expressions should not be too complex
+php:S1068	READY	Unused "private" fields should be removed
+php:S1075	READY	URIs should not be hardcoded
+php:S107	READY	Functions should not have too many parameters
+php:S108	READY	Nested blocks of code should not be left empty
+php:S1105	READY	An open curly brace should be located at the end of a line
+php:S1106	READY	An open curly brace should be located at the beginning of a line
+php:S1109	READY	A close curly brace should be located at the beginning of a line
+php:S110	READY	Inheritance tree of classes should not be too deep
+php:S1110	READY	Redundant pairs of parentheses should be removed
+php:S1116	READY	Empty statements should be removed
+php:S1117	DEPRECATED	Local variables should not have the same name as class fields
+php:S1121	READY	Assignments should not be made from within sub-expressions
+php:S1124	READY	Modifiers should be declared in the correct order
+php:S1125	READY	Boolean literals should not be redundant
+php:S1126	READY	Return of boolean expressions should not be wrapped into an "if-then-else" statement
+php:S112	READY	Generic exceptions ErrorException, RuntimeException and Exception should not be thrown
+php:S1131	READY	Lines should not end with trailing whitespaces
+php:S1134	READY	Track uses of "FIXME" tags
+php:S1135	READY	Track uses of "TODO" tags
+php:S113	READY	Files should end with a newline
+php:S1142	READY	Functions should not contain too many return statements
+php:S1144	READY	Unused "private" methods should be removed
+php:S1145	READY	Useless "if(true) {...}" and "if(false){...}" blocks should be removed
+php:S114	READY	Interface names should comply with a naming convention
+php:S1151	READY	"switch case" clauses should not have too many lines of code
+php:S1155	READY	"empty()" should be used to test for emptiness
+php:S115	READY	Constant names should comply with a naming convention
+php:S116	READY	Field names should comply with a naming convention
+php:S1172	READY	Unused function parameters should be removed
+php:S117	READY	Local variable and function parameter names should comply with a naming convention
+php:S1185	READY	Overriding methods should do more than simply call the same method in the super class
+php:S1186	READY	Methods should not be empty
+php:S1192	READY	String literals should not be duplicated
+php:S1200	READY	Classes should not be coupled to too many other classes
+php:S121	READY	Control structures should use curly braces
+php:S1226	READY	Function and method parameters' initial values should not be ignored
+php:S122	READY	Statements should be on separate lines
+php:S125	READY	Sections of code should not be commented out
+php:S1264	READY	A "while" loop should be used instead of a "for" loop
+php:S126	READY	"if ... else if" constructs should end with "else" clauses
+php:S127	READY	"for" loop stop conditions should be invariant
+php:S128	READY	Switch cases should end with an unconditional "break" statement
+php:S1301	READY	"switch" statements should have at least 3 "case" clauses
+php:S1311	DEPRECATED	Cyclomatic Complexity of classes should not be too high
+php:S1313	READY	IP addresses should not be hardcoded
+php:S1314	READY	Octal values should not be used
+php:S131	READY	"switch" statements should have "default" clauses
+php:S134	READY	Control flow statements "if", "for", "while", "switch" and "try" should not be nested too deeply
+php:S138	READY	Functions should not have too many lines of code
+php:S139	READY	Comments should not be located at the end of lines of code
+php:S1448	READY	Classes should not have too many methods
+php:S1451	READY	Track lack of copyright and license headers
+php:S1479	READY	"switch" statements should not have too many "case" clauses
+php:S1481	READY	Unused local variables should be removed
+php:S1488	READY	Local variables should not be declared and then immediately returned or thrown
+php:S1523	READY	Dynamic code execution should not use user-controlled data
+php:S1541	READY	Cyclomatic Complexity of functions should not be too high
+php:S1578	READY	File names should comply with a naming convention
+php:S1599	READY	Variable variables should not be used
+php:S1600	READY	Deprecated predefined variables should not be used
+php:S1603	READY	Deprecated constructor declarations should not be used
+php:S1605	READY	"__construct" functions should not make PHP 4-style calls to parent constructors
+php:S1607	READY	A reason should be provided when skipping a test
+php:S1656	READY	Variables should not be self-assigned
+php:S1697	READY	Short-circuit logic should be used to prevent null pointer dereferences in conditionals
+php:S1751	READY	Loops with at most one iteration should be refactored
+php:S1757	READY	"<?php" and "<?=" tags should be used
+php:S1763	READY	All code should be reachable
+php:S1764	READY	Identical expressions should not be used on both sides of a binary operator
+php:S1765	READY	The "var" keyword should not be used
+php:S1766	READY	More than one property should not be declared per statement
+php:S1779	READY	Only LF character (Unix-like) should be used to end lines
+php:S1780	READY	Closing tag "?>" should be omitted on files containing only PHP
+php:S1781	READY	PHP keywords and constants "true", "false", "null" should be lower case
+php:S1784	READY	Method visibility should be explicitly declared
+php:S1788	READY	Method arguments with default values should be last
+php:S1793	READY	"elseif" keyword should be used in place of "else if" keywords
+php:S1799	READY	"exit(...)" and "die(...)" statements should not be used
+php:S1808	READY	Source code should comply with formatting standards
+php:S1820	READY	Classes should not have too many fields
+php:S1821	READY	"switch" statements should not be nested
+php:S1848	READY	Objects should not be created to be dropped immediately without being used
+php:S1854	READY	Unused assignments should be removed
+php:S1862	READY	Related "if/else if" statements and "cases" in a "switch" should not have the same condition
+php:S1871	READY	Two branches in a conditional structure should not have exactly the same implementation
+php:S1940	READY	Boolean checks should not be inverted
+php:S1990	READY	"final" should not be used redundantly
+php:S1996	READY	Files should contain only one top-level class or interface each
+php:S1997	READY	Files should not contain inline HTML
+php:S1998	READY	References should not be passed to function calls
+php:S2000	READY	Files should not contain characters before "<?php"
+php:S2001	READY	Deprecated features should not be used
+php:S2002	READY	Errors should not be silenced
+php:S2003	READY	"require_once" and "include_once" should be used instead of "require" and "include"
+php:S2004	READY	Functions should not be nested too deeply
+php:S2005	READY	String literals should not be concatenated
+php:S2007	READY	Functions and variables should not be defined outside of classes
+php:S2010	READY	"&&" and "||" should be used
+php:S2011	READY	"global" should not be used
+php:S2014	READY	"$this" should not be used in a static context
+php:S2036	READY	Files that define symbols should not cause side-effects
+php:S2037	READY	Static members should be referenced with "static::"
+php:S2038	READY	Colors should be defined in upper case
+php:S2041	DEPRECATED	Parentheses should not be used for calls to "echo"
+php:S2042	READY	Classes should not have too many lines of code
+php:S2043	READY	Superglobals should not be accessed directly
+php:S2044	READY	"php_sapi_name()" should not be used
+php:S2046	READY	Perl-style comments should not be used
+php:S2047	READY	The names of methods with boolean return values should start with "is" or "has"
+php:S2050	READY	Alias functions should not be used
+php:S2053	READY	Password hashing functions should use an unpredictable salt
+php:S2068	READY	Credentials should not be hard-coded
+php:S2070	DEPRECATED	SHA-1 and Message-Digest hash algorithms should not be used in secure contexts
+php:S2077	READY	SQL queries should not be dynamically formatted
+php:S2092	READY	Cookies should have the "secure" flag
+php:S2115	READY	A secure password should be used when connecting to a database
+php:S2123	READY	Values should not be uselessly incremented
+php:S2166	READY	Classes named like "Exception" should extend "Exception" or a subclass
+php:S2187	READY	TestCases should contain tests
+php:S2201	READY	Return values from functions without side effects should not be ignored
+php:S2234	READY	Parameters should be passed in the correct order
+php:S2245	READY	Pseudorandom number generators (PRNGs) should not be used in security contexts
+php:S2251	READY	A "for" loop update clause should move the counter in the right direction
+php:S2260	READY	PHP parser failure
+php:S2277	DEPRECATED	Cryptographic RSA algorithms should always incorporate OAEP (Optimal Asymmetric Encryption Padding)
+php:S2278	DEPRECATED	Neither DES (Data Encryption Standard) nor DESede (3DES) should be used
+php:S2612	READY	File permissions should not be set to world-accessible values
+php:S2681	READY	Multiline blocks should be enclosed in curly braces
+php:S2699	READY	Tests should include assertions
+php:S2701	READY	Literal boolean values and nulls should not be used in equality assertions
+php:S2737	READY	"catch" clauses should do more than rethrow
+php:S2755	READY	XML parsers should not be vulnerable to XXE attacks
+php:S2757	READY	Non-existent operators like "=+" should not be used
+php:S2761	READY	Unary prefix operators should not be repeated
+php:S2830	READY	Class constructors should not create other objects
+php:S2918	READY	Configuration should not be changed dynamically
+php:S2964	DEPRECATED	"sleep" should not be called
+php:S3011	READY	Reflection should not be used to increase accessibility of classes, methods, or fields
+php:S3330	READY	Cookies should have the "HttpOnly" flag
+php:S3332	DEPRECATED	Session-management cookies should not be persistent
+php:S3333	READY	"open_basedir" should limit file access
+php:S3334	READY	"allow_url_fopen" and "allow_url_include" should be disabled
+php:S3335	READY	"cgi.force_redirect" should be enabled
+php:S3336	READY	"session.use_trans_sid" should not be enabled
+php:S3337	READY	"enable_dl" should be disabled
+php:S3338	DEPRECATED	"file_uploads" should be disabled
+php:S3358	READY	Ternary operators should not be nested
+php:S3360	READY	Test class names should end with "Test"
+php:S3415	READY	Assertion arguments should be passed in the correct order
+php:S3626	READY	Jump statements should not be redundant
+php:S3699	READY	The output of functions that don't return anything should not be used
+php:S3776	READY	Cognitive Complexity of functions should not be too high
+php:S3801	READY	Functions should use "return" consistently
+php:S3923	READY	All branches in a conditional structure should not have exactly the same implementation
+php:S3972	READY	Conditionals should start on new lines
+php:S3973	READY	A conditionally executed single line should be denoted by indentation
+php:S3981	READY	Array or Countable object count comparisons should make sense
+php:S3984	READY	Exceptions should not be created without being thrown
+php:S4142	DEPRECATED	Duplicate values should not be passed as arguments
+php:S4143	READY	Array values should not be replaced unconditionally
+php:S4144	READY	Methods should not have identical implementations
+php:S4423	READY	Weak SSL/TLS protocols should not be used
+php:S4426	READY	Cryptographic keys should be robust
+php:S4433	READY	LDAP connections should be authenticated
+php:S4502	READY	CSRF protections should not be disabled
+php:S4507	READY	Debugging features should not be enabled in production
+php:S4524	READY	"default" clauses should be first or last
+php:S4790	READY	Weak hashing algorithms should not be used
+php:S4824	READY	References used in "foreach" loops should be "unset"
+php:S4828	DEPRECATED	OS process signal parameters should be validated
+php:S4830	READY	Server certificates should be verified during SSL/TLS connections
+php:S4833	READY	Use of namespaces should be preferred to "include" or "require" functions
+php:S5042	DEPRECATED	Expanding archive files should not be done without controlling resource consumption
+php:S5122	READY	Cross-Origin Resource Sharing (CORS) policy should be restricted to trusted origins
+php:S5328	READY	Session IDs must be securely generated and not user-specified
+php:S5332	READY	Clear-text protocols should not be used
+php:S5361	READY	`str_replace` should be preferred to `preg_replace`
+php:S5527	READY	Server hostnames should be verified during SSL/TLS connections
+php:S5542	READY	Encryption algorithms should be used with secure mode and padding scheme
+php:S5547	READY	Cipher algorithms should be robust
+php:S5632	READY	Raised Exceptions must derive from Throwable
+php:S5693	READY	HTTP request content length should be limited
+php:S5708	READY	Caught Exceptions must derive from Throwable
+php:S5713	READY	A subclass should not be in the same "catch" clause as a parent class
+php:S5779	READY	Assertion failure exceptions should not be ignored
+php:S5783	READY	Only one method invocation is expected when testing exceptions
+php:S5785	READY	PHPUnit assertTrue/assertFalse should be simplified to the corresponding dedicated assertion
+php:S5797	READY	Constants should not be used as conditions
+php:S5808	READY	Authorizations should be based on strong decisions
+php:S5842	READY	Repeated patterns in regular expressions should not match the empty string
+php:S5843	READY	Regular expressions should not be too complicated
+php:S5850	READY	Alternatives in regular expressions should be grouped when used with anchors
+php:S5855	READY	Regex alternatives should not be redundant
+php:S5856	READY	Regular expressions should be syntactically valid
+php:S5857	READY	Character classes should be preferred over reluctant quantifiers in regular expressions
+php:S5863	READY	Assertions should not compare an object to itself
+php:S5867	READY	Unicode-aware versions of character classes should be preferred
+php:S5868	READY	Unicode Grapheme Clusters should be avoided inside regex character classes
+php:S5869	READY	Character classes in regular expressions should not contain the same character twice
+php:S5876	READY	A new session should be created during user authentication
+php:S5899	READY	Test methods should be discoverable
+php:S5911	READY	Class of caught exception should be defined
+php:S5915	READY	Assertions should not be made at the end of blocks expecting an exception
+php:S5935	READY	Framework-provided functions should be used to test exceptions
+php:S5994	READY	Regex patterns following a possessive quantifier should not always fail
+php:S5996	READY	Regex boundaries should not be used in a way that can never be matched
+php:S6001	READY	Back references in regular expressions should only refer to capturing groups that are matched before the reference
+php:S6002	READY	Regex lookahead assertions should not be contradictory
+php:S6019	READY	Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string
+php:S6035	READY	Single-character alternations in regular expressions should be replaced with character classes
+php:S6323	READY	Alternation in regular expressions should not contain empty alternatives
+php:S6326	READY	Regular expressions should not contain multiple spaces
+php:S6328	READY	Replacement strings should reference existing regular expression groups
+php:S6331	READY	Regular expressions should not contain empty groups
+php:S6339	DEPRECATED	Secret keys and salt values should be robust
+php:S6341	READY	Disable direct file editing in WordPress admin interface
+php:S6343	READY	Automatic updates should not be disabled
+php:S6344	READY	Constants should not be redefined
+php:S6345	READY	External requests should be restricted in WordPress to prevent data leaks and SSRF
+php:S6346	READY	Prevent unauthenticated WordPress database repair for enhanced security
+php:S6347	READY	WordPress options should not be defined at the end of "wp-config.php"
+php:S6348	READY	Prevent unfiltered HTML exposure in WordPress for enhanced security
+php:S6349	READY	WordPress option names should not be misspelled
+php:S6353	READY	Regular expression quantifiers and character classes should be used concisely
+php:S6393	READY	Regular expressions should have valid delimiters
+php:S6395	READY	Non-capturing groups without quantifier should not be used
+php:S6396	READY	Superfluous curly brace quantifiers should be avoided
+php:S6397	READY	Character classes in regular expressions should not contain only one character
+php:S6418	READY	Secrets should not be hard-coded
+php:S6437	READY	Credentials should not be hard-coded
+php:S6600	READY	Unnecessary parentheses should not be used for constructs
+php:S836	READY	Variables should be initialized before use
+php:S881	READY	Increment (++) and decrement (--) operators should not be used in a method call or mixed with other operators in an expression
+php:S905	READY	Non-empty statements should change control flow or have at least one side-effect
+php:S907	READY	"goto" statement should not be used
+php:S930	READY	The number of arguments passed to a function should match the number of parameters
