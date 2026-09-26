@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-
-Esta licença (MIT) cobre o código deste pacote: as variantes dos Code Smells
-(experimento/exemplos/), os scripts, as configurações das ferramentas e o
-ambiente Docker. Os dados e os resultados são cobertos pela licença CC BY 4.0
-(arquivo LICENSE-DADOS). Ver README.md, seção "Licenças".
